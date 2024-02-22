@@ -1,0 +1,68 @@
+<div id="<%= dom_id driver %>">
+  <p>
+    <%= icon('fa-regular', 'user') %>
+    <strong>Full name:</strong>
+    <%= driver.full_name %>
+  </p>
+
+  <p>
+    <%= icon('fa-solid', 'phone') %>
+    <strong>Phone:</strong>
+    <%= driver.phone %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'envelope') %>
+    <strong>Email:</strong>
+    <%= driver.email %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'number') %>
+    <strong>Driver License Number:</strong>
+    <%= driver.driver_license_number %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'license') %>
+    <strong>Medical Card:</strong>
+    <%= driver.medical_card ? 'Yes' : 'No' %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'calendar') %>
+    <strong>Medical Card Expiration:</strong>
+    <%= driver.medical_card_expiration %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'calendar') %>
+    <strong>Driver Application Document:</strong>
+    <%= driver.driver_application_doc %>
+  </p>
+
+  <p>
+  <%= icon('fa-regular', 'calendar') %>
+    <strong>Drug Test Date:</strong>
+    <%= driver.drug_test_date %>
+  </p>
+
+  <p>
+    <%= icon('fa-regular', 'calendar') %>
+    <strong>MVR Report Date:</strong>
+    <%= driver.mvr_report_date %>
+  </p>  
+
+  <p>
+    <%= icon('fa-regular', 'calendar') %>
+    <strong>Clearinghouse Date:</strong>
+    <%= driver.clearinghouse_date %>
+  </p> 
+
+  <p>
+    <%= icon('fa-regular', 'truck') %>
+    <strong>Assigned Vehicle:</strong>
+    <%= driver.assigned_vehicle.try(:unit_number) %>
+  </p>
+
+</div>

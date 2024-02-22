@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unit_number: MyString
+  plate_number: MyString
+  vin_number: MyString
+  registration_expiration: 2024-02-13
+  insurance_expiration: 2024-02-13
+
+two:
+  unit_number: MyString
+  plate_number: MyString
+  vin_number: MyString
+  registration_expiration: 2024-02-13
+  insurance_expiration: 2024-02-13

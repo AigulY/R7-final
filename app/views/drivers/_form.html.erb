@@ -1,0 +1,76 @@
+<%= form_with(model: driver, local: true) do |form| %>
+  <% if driver.errors.any? %>
+    <div class="alert alert-danger">
+      <h2><%= pluralize(driver.errors.count, "error") %> prohibited this driver from being saved:</h2>
+      <ul>
+        <% driver.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :phone %>
+    <%= form.telephone_field :phone, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :email %>
+    <%= form.email_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :driver_license_number %>
+    <%= form.text_field :driver_license_number, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :medical_card, 'Medical Card' %>
+    <%= form.select :medical_card, [['Yes', true], ['No', false]], {}, {class: 'form-control', id: 'medical_card_select'} %>
+  </div>
+
+  <div class="form-group" id="medical_card_expiration_group">
+    <%= form.label :medical_card_expiration %>
+    <%= form.date_field :medical_card_expiration, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :driver_application_doc, 'Driver Application Document' %>
+    <%= form.date_field :driver_application_doc, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :drug_test_date %>
+    <%= form.date_field :drug_test_date, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :mvr_report_date %>
+    <%= form.date_field :mvr_report_date, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :clearinghouse_date %>
+    <%= form.date_field :clearinghouse_date, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :vehicle_id, 'Assigned Vehicle' %>
+    <%= form.collection_select :vehicle_id, Vehicle.all, :id, :unit_number, include_blank: true, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: 'btn btn-primary' %>
+  </div>
+<% end %>

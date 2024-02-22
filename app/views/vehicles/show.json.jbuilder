@@ -1,0 +1,1 @@
+json.partial! "vehicles/order", order: @vehicle

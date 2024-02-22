@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  phone: MyString
+  email: MyString
+  driver_license_number: MyString
+  medical_card: false
+  medical_card_expiration: 2024-02-13
+  driver_application_doc: 2024-02-13
+  drug_test_date: 2024-02-13
+  mvr_report_date: 2024-02-13
+  clearinghouse_date: 2024-02-13
+  vehicle_id: 1
+
+two:
+  first_name: MyString
+  last_name: MyString
+  phone: MyString
+  email: MyString
+  driver_license_number: MyString
+  medical_card: false
+  medical_card_expiration: 2024-02-13
+  driver_application_doc: 2024-02-13
+  drug_test_date: 2024-02-13
+  mvr_report_date: 2024-02-13
+  clearinghouse_date: 2024-02-13
+  vehicle_id: 1

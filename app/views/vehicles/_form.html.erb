@@ -1,0 +1,41 @@
+<%= form_with(model: vehicle, local: true) do |form| %>
+  <% if vehicle.errors.any? %>
+    <div class="alert alert-danger">
+      <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+      <ul>
+        <% vehicle.errors.full_messages.each do |error| %>
+          <li><%= error %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :unit_number %>
+    <%= form.text_field :unit_number, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :plate_number %>
+    <%= form.text_field :plate_number, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :vin_number %>
+    <%= form.text_field :vin_number, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :registration_expiration %>
+    <%= form.date_field :registration_expiration, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= form.label :insurance_expiration %>
+    <%= form.date_field :insurance_expiration, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Save Vehicle', class: 'btn btn-primary' %>
+  </div>
+<% end %>

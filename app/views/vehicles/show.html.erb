@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <h1>Vehicle: <%= @vehicle.unit_number %></h1>
+  <p><strong>Plate Number:</strong> <%= @vehicle.plate_number %></p>
+  <p><strong>VIN Number:</strong> <%= @vehicle.vin_number %></p>
+
+  <%= link_to 'Edit', edit_vehicle_path(@vehicle), class: 'btn btn-warning' %>
+  <%= link_to 'Back to Vehicles', vehicles_path, class: 'btn btn-secondary' %>
+</div>
