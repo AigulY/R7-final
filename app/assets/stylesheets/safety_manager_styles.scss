@@ -3,38 +3,38 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container {
-  max-width: 400px;
+.auth-container {
+  max-width: 25em;
   margin: 50px auto;
   background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 8em;
+  border-radius: 0.7em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, 0.1);
 }
 
 .field, .actions {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5em;
 }
 
 input[type=email], input[type=password] {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 0.5 em;
 }
 
 input[type=submit] {
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 1em 2em;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.5em;
   cursor: pointer;
 }
 
@@ -46,8 +46,7 @@ input[type=submit]:hover {
   background-image: url('/assets/dot_image12.jpg');
   background-size: cover;
   background-position: center;
-  position: relative;
-  height: 100vh; 
+  height: 100vh;
 }
 
 .overlay {
