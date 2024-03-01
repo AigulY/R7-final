@@ -20,19 +20,20 @@
   }
 
   :root {
-    --bs-body-bg: #fae4f9;
+    --bs-body-bg: #e4f1fa;
   }
 
-  @font-face {
-    font-family: 'Haydenz';
-    src: url('.../Haydenz.ttf');
-  }
+  // @font-face {
+  //   font-family: 'Haydenz';
+  //   src: url('/assets/Haydenz.ttf');
+  // }
 
   .banner-background {
-    background-image: url('.../dot_image10.jpg');
+    background-image: url('/assets/dot_image11.jpg');
     background-size: cover;
     font-family: 'Haydenz';
   }
 
   @import "font-awesome";
+  @import "safety_manager_styles";
   

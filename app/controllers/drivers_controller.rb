@@ -1,5 +1,7 @@
 class DriversController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :catch_not_found
+
+    before_action :authenticate_safety_manager!
     
     before_action :set_driver, only: [:show, :edit, :update, :destroy]
   
